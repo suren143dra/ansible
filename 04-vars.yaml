@@ -1,0 +1,10 @@
+- name: nginx install and run
+  hosts: web
+  vars:
+  COURSE: DevOps with AWS
+  DURATION: 120Hrs
+  TRAINER: Sivakumar reddy
+  tasks:
+  - name: Print the Variable message
+    ansible.builtin.debug:
+      msg: "Hi I am learing {{COURSE}}, Duration is: {{DURATION}}, Trainer is: {{TRAINER}}"
